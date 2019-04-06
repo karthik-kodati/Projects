@@ -43,7 +43,7 @@ public class GmailAutomationLogic {
 		
 		
 		userName = driver.findElement(By.id("identifierId"));
-		userName.sendKeys("karthikeyankodati@gmail.com");
+		userName.sendKeys("yourmail@gmail.com");
 		
 		driver.findElement(By.id("identifierNext")).click();
 		
@@ -52,7 +52,7 @@ public class GmailAutomationLogic {
 						driver.findElement(By.name("password"))));
 		
 		password = driver.findElement(By.name("password"));
-		password.sendKeys("kart@1989");
+		password.sendKeys("your password");
 		
 		 wait = new WebDriverWait(driver, 20);
 			wait.until(ExpectedConditions.elementToBeClickable(
@@ -69,7 +69,7 @@ public class GmailAutomationLogic {
 						driver.findElement(By.className("vO"))));
 				
 		to = driver.findElement(By.className("vO"));
-		to.sendKeys("karthikkodati85@gmail.com");
+		to.sendKeys("toaddress@gmail.com");
 		
 		wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.elementToBeClickable(
